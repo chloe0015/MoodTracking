@@ -36,18 +36,7 @@ struct ContentView: View {
                 
                 switch selectedState {
                 case 0:
-                    NavigationView{
-                        Text("How Are You Today?")
-            //                .font(.title)
-            //                .fontWeight(.semibold)
-                            .font(.system(size: 24, weight: .semibold, design: .monospaced))
-                            .multilineTextAlignment(.center)
-                            .position(x: 200, y: 50)
-
-                            .navigationTitle("ColorMood")
-                        .navigationBarTitleDisplayMode(.inline)
-                        
-                    }
+                    HomeView()
                     
                 case 1:
                     NavigationView{

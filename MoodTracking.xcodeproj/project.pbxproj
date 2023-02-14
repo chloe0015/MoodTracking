@@ -11,6 +11,7 @@
 		4E0F8E7E298AB5B600DA1BD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0F8E7D298AB5B600DA1BD6 /* ContentView.swift */; };
 		4E0F8E80298AB5B700DA1BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0F8E7F298AB5B700DA1BD6 /* Assets.xcassets */; };
 		4E0F8E83298AB5B800DA1BD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0F8E82298AB5B800DA1BD6 /* Preview Assets.xcassets */; };
+		4E840A7E299BF92F0007AB2D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E840A7D299BF92F0007AB2D /* HomeView.swift */; };
 		4E9F0681298D56810078E1AD /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F067D298D56810078E1AD /* OFL.txt */; };
 		4E9F0682298D56810078E1AD /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F067E298D56810078E1AD /* README.txt */; };
 		4E9F0683298D56810078E1AD /* static in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F067F298D56810078E1AD /* static */; };
@@ -25,6 +26,7 @@
 		4E0F8E7F298AB5B700DA1BD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E0F8E82298AB5B800DA1BD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E0F8E84298AB5B800DA1BD6 /* MoodTracking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoodTracking.entitlements; sourceTree = "<group>"; };
+		4E840A7D299BF92F0007AB2D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4E9F067D298D56810078E1AD /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		4E9F067E298D56810078E1AD /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		4E9F067F298D56810078E1AD /* static */ = {isa = PBXFileReference; lastKnownFileType = folder; path = static; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		4E0F8E7A298AB5B600DA1BD6 /* MoodTracking */ = {
 			isa = PBXGroup;
 			children = (
+				4E840A7C299BF9070007AB2D /* HomeView */,
 				4E9F0687298D8C310078E1AD /* Icon */,
 				4E9F0674298D55CE0078E1AD /* Font */,
 				4E0F8E7B298AB5B600DA1BD6 /* MoodTrackingApp.swift */,
@@ -79,6 +82,14 @@
 				4E0F8E82298AB5B800DA1BD6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E840A7C299BF9070007AB2D /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				4E840A7D299BF92F0007AB2D /* HomeView.swift */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 		4E9F0674298D55CE0078E1AD /* Font */ = {
@@ -175,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E840A7E299BF92F0007AB2D /* HomeView.swift in Sources */,
 				4E0F8E7E298AB5B600DA1BD6 /* ContentView.swift in Sources */,
 				4E0F8E7C298AB5B600DA1BD6 /* MoodTrackingApp.swift in Sources */,
 			);
