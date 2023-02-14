@@ -6,6 +6,8 @@ struct ContentView: View {
     @State var selectedState = 0
     @State var presented = false
     
+    @State var diary: String = ""
+    
     let icons = [
         "paintpalette",
         "gearshape",
@@ -48,7 +50,18 @@ struct ContentView: View {
                             .navigationTitle("ColorMood")
                         .navigationBarTitleDisplayMode(.inline)
                         
+                        Text("Write a mood diary")
+                            .font(.system(size: 18, weight: .semibold))
+                            .padding(.top, 20)
+                        TextEditor(text: $diary)
+                            .frame(height: 130)
+                            .font(.body.weight(.black))
+                            .foregroundColor(.white)
+                            .scrollContentBackground(.hidden)
+                            .background(.indigo)
+                            .cornerRadius(12)
                     }
+                        
                     
                 case 2:
                     NavigationView{
