@@ -24,24 +24,26 @@ struct HomeView: View {
                     
                     //choose color
                     Text("Choose your mood color")
-                        .font(.system(size: 18, weight: .semibold))
+                        .font(.headline)
                         .padding(.top, 20)
                     ColorPicker("", selection: $selectedColor)
                         .labelsHidden()
-                    
+
                     //scale number
                     Text("Write down your mood scale(1-10)")
-                        .font(.system(size: 18, weight: .semibold))
+                        .font(.headline)
                         .padding(.top, 20)
+
                     HStack(alignment: .center, spacing: 10) {
                         Text("Scale:")
-                            .font(.system(size: 20, weight: .bold))
-                        TextField("scale", text: $scale).frame(width: 100,height: 30).background(Color.gray).cornerRadius(5)
+                            .font(.title3)
+                        TextField("number", text: $scale).frame(width: 100,height: 30).background(Color(UIColor.lightGray)).cornerRadius(5)
                     }
+                    Spacer()
                     
                     //choose shape
                     Text("Choose your mood shape")
-                        .font(.system(size: 18, weight: .semibold))
+                        .font(.headline)
                         .padding(.top, 20)
                     
                     ScrollView(.horizontal, showsIndicators: true){
@@ -67,12 +69,13 @@ struct HomeView: View {
                             
                         }
                     }.frame(height: 110, alignment: .center)
+                
                     
                     
                     //text
                     VStack(alignment: .center, spacing: 10){
                         Text("Write a mood diary")
-                            .font(.system(size: 18, weight: .semibold))
+                            .font(.headline)
                             .padding(.top, 20)
                         TextEditor(text: $diary)
                             .frame(height: 130)
@@ -97,7 +100,7 @@ struct HomeView: View {
                             
                         }
                         .frame(width: 250,height: 60)
-                        .background(Color.gray)
+                        .background(Color(UIColor.lightGray))
                         .cornerRadius(12)
                         .alert(isPresented: $showAlert) {
                             Alert(title: Text(alertMsg))
@@ -106,8 +109,18 @@ struct HomeView: View {
                         Spacer().frame(height: 200)
                         
                     }
-                }
+                }.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+                    .navigationTitle("ColorMood")
+                    .navigationBarTitleDisplayMode(.inline)
             }
         }
+    }
+}
+
+
+
+struct Previews_HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
     }
 }
