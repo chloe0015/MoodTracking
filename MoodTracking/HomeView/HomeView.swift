@@ -5,6 +5,13 @@ struct HomeView: View {
     let shapeImageNames: [String] = ["shape","shape","shape"]
     @State var selectedShapeImageNameIndex: Int?                                                   //optional value
     
+    
+    @State var diary: String = ""
+    
+    @State var showAlert: Bool = false
+    @State var alertMsg: String = ""
+    
+    
     var body: some View {
         NavigationView{
             ScrollView(.vertical, showsIndicators: false) {
@@ -50,6 +57,7 @@ struct HomeView: View {
                                     
                                 } label: {
                                     Image(uiImage: UIImage(named: shapeImageNames[index])!)
+                                        .resizable()
                                         .frame(width: 100, height: 100, alignment: .center
                                         ).padding(5)
                                         .tag(index)
@@ -58,12 +66,48 @@ struct HomeView: View {
                             }
                             
                         }
-                    }
+                    }.frame(height: 110, alignment: .center)
                     
-            
+                    
+                    //text
+                    VStack(alignment: .center, spacing: 10){
+                        Text("Write a mood diary")
+                            .font(.system(size: 18, weight: .semibold))
+                            .padding(.top, 20)
+                        TextEditor(text: $diary)
+                            .frame(height: 130)
+                            .font(.body.weight(.black))
+                            .foregroundColor(.white)
+                            .scrollContentBackground(.hidden)
+                            .background(.indigo)
+                            .cornerRadius(12)
+                        
+                        
+                        //clear button
+                        Button {
+                            selectedColor = Color.red
+                            scale = ""
+                            selectedShapeImageNameIndex = nil
+                            diary = ""
+                            alertMsg = "Clear success"
+                            showAlert = true
+                        } label: {
+                            Text("Clear")
+                                .foregroundColor(.white)
+                            
+                        }
+                        .frame(width: 250,height: 60)
+                        .background(Color.gray)
+                        .cornerRadius(12)
+                        .alert(isPresented: $showAlert) {
+                            Alert(title: Text(alertMsg))
+                        }
+                        
+                        Spacer().frame(height: 200)
+                        
                     }
                 }
             }
         }
     }
-
+}
