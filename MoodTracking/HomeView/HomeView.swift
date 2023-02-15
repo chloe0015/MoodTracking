@@ -10,6 +10,24 @@ struct HomeView: View {
     
     @State var showAlert: Bool = false
     @State var alertMsg: String = ""
+    @State var alertMsg1: String = ""
+    
+
+    func addMood(){
+        alertMsg1 = "Add success"
+        showAlert = true
+    }
+    
+    func clearMood(){
+        selectedColor = Color.red
+        scale = ""
+        selectedShapeImageNameIndex = nil
+        diary = ""
+        alertMsg = "Clear success"
+        showAlert = true
+    }
+    
+    
     
     
     var body: some View {
@@ -86,14 +104,23 @@ struct HomeView: View {
                             .cornerRadius(12)
                         
                         
+                        //add button
+                        Button{
+                            self.addMood()
+                        } label:{
+                            Text("Add")
+                                .foregroundColor(.white)
+                        }
+                        .frame(width: 250,height: 60)
+                        .background(Color.orange)
+                        .cornerRadius(12)
+                        .alert(isPresented: $showAlert) {
+                            Alert(title: Text(alertMsg1))
+                        }
+                     
                         //clear button
                         Button {
-                            selectedColor = Color.red
-                            scale = ""
-                            selectedShapeImageNameIndex = nil
-                            diary = ""
-                            alertMsg = "Clear success"
-                            showAlert = true
+                            self.clearMood()
                         } label: {
                             Text("Clear")
                                 .foregroundColor(.white)
@@ -112,6 +139,8 @@ struct HomeView: View {
                 }.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
                     .navigationTitle("ColorMood")
                     .navigationBarTitleDisplayMode(.inline)
+                
+               
             }
         }
     }
@@ -124,3 +153,12 @@ struct Previews_HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+
+
+extension UIColor {
+    convenience init(rgb: UInt) {
+       self.init(red: CGFloat((rgb & 0xFF0000) >> 16) / 255.0, green: CGFloat((rgb & 0x00FF00) >> 8) / 255.0, blue: CGFloat(rgb & 0x0000FF) / 255.0, alpha: CGFloat(1.0))
+    }
+}
+
+

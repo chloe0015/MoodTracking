@@ -17,6 +17,9 @@
 		4E9F0683298D56810078E1AD /* static in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F067F298D56810078E1AD /* static */; };
 		4E9F0684298D56810078E1AD /* Signika-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F0680298D56810078E1AD /* Signika-VariableFont_wght.ttf */; };
 		4E9F0686298D8C270078E1AD /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F0685298D8C260078E1AD /* Home.png */; };
+		4EF9A6B5299D3C5100A57892 /* CoreDataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9A6B4299D3C5100A57892 /* CoreDataManger.swift */; };
+		4EF9A6B9299D447000A57892 /* MoodTracking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9A6B7299D447000A57892 /* MoodTracking.xcdatamodeld */; };
+		4EF9A6DD299D45CD00A57892 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9A6DC299D45CD00A57892 /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		4E9F067F298D56810078E1AD /* static */ = {isa = PBXFileReference; lastKnownFileType = folder; path = static; sourceTree = "<group>"; };
 		4E9F0680298D56810078E1AD /* Signika-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		4E9F0685298D8C260078E1AD /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		4EF9A6B4299D3C5100A57892 /* CoreDataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManger.swift; sourceTree = "<group>"; };
+		4EF9A6B8299D447000A57892 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4EF9A6DC299D45CD00A57892 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		4E0F8E7A298AB5B600DA1BD6 /* MoodTracking */ = {
 			isa = PBXGroup;
 			children = (
+				4EF9A6B6299D445800A57892 /* CoreData */,
 				4E840A7C299BF9070007AB2D /* HomeView */,
 				4E9F0687298D8C310078E1AD /* Icon */,
 				4E9F0674298D55CE0078E1AD /* Font */,
@@ -109,6 +116,16 @@
 				4E9F0685298D8C260078E1AD /* Home.png */,
 			);
 			path = Icon;
+			sourceTree = "<group>";
+		};
+		4EF9A6B6299D445800A57892 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9A6B7299D447000A57892 /* MoodTracking.xcdatamodeld */,
+				4EF9A6DC299D45CD00A57892 /* Persistence.swift */,
+				4EF9A6B4299D3C5100A57892 /* CoreDataManger.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF9A6B5299D3C5100A57892 /* CoreDataManger.swift in Sources */,
 				4E840A7E299BF92F0007AB2D /* HomeView.swift in Sources */,
+				4EF9A6B9299D447000A57892 /* MoodTracking.xcdatamodeld in Sources */,
+				4EF9A6DD299D45CD00A57892 /* Persistence.swift in Sources */,
 				4E0F8E7E298AB5B600DA1BD6 /* ContentView.swift in Sources */,
 				4E0F8E7C298AB5B600DA1BD6 /* MoodTrackingApp.swift in Sources */,
 			);
@@ -390,6 +410,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4EF9A6B7299D447000A57892 /* MoodTracking.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4EF9A6B8299D447000A57892 /* Model.xcdatamodel */,
+			);
+			currentVersion = 4EF9A6B8299D447000A57892 /* Model.xcdatamodel */;
+			path = MoodTracking.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4E0F8E70298AB5B600DA1BD6 /* Project object */;
 }
