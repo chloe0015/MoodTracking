@@ -14,8 +14,21 @@ struct HomeView: View {
     
 
     func addMood(){
-        alertMsg1 = "Add success"
+        let rgb = UIColor(selectedColor).rgb()!
+        var scaleInt = Int64(scale)
+        if let scaleIntNew = scaleInt,
+           (scaleIntNew < 1 || scaleIntNew > 10){
+            scaleInt = nil
+        }
+        var shapeImage : String?
+        if let selectedShapeImageNameIndex = selectedShapeImageNameIndex{
+            shapeImage = shapeImageNames[selectedShapeImageNameIndex]
+        }
+        
+       let result = CoreDataManager.share.addOneMood(color: Int64(rgb), shapeImage:shapeImage, scale: scaleInt, diary: diary)
+        alertMsg = result.msg
         showAlert = true
+        
     }
     
     func clearMood(){
@@ -26,8 +39,6 @@ struct HomeView: View {
         alertMsg = "Clear success"
         showAlert = true
     }
-    
-    
     
     
     var body: some View {
@@ -156,8 +167,27 @@ struct Previews_HomeView_Previews: PreviewProvider {
 
 
 extension UIColor {
-    convenience init(rgb: UInt) {
-       self.init(red: CGFloat((rgb & 0xFF0000) >> 16) / 255.0, green: CGFloat((rgb & 0x00FF00) >> 8) / 255.0, blue: CGFloat(rgb & 0x0000FF) / 255.0, alpha: CGFloat(1.0))
+    // color to rgb value
+    func rgb() -> Int? {
+        var fRed : CGFloat = 0
+        var fGreen : CGFloat = 0
+        var fBlue : CGFloat = 0
+        var fAlpha: CGFloat = 0
+        if self.getRed(&fRed, green: &fGreen, blue: &fBlue, alpha: &fAlpha) {
+            let iRed = Int(fRed * 255.0)
+            let iGreen = Int(fGreen * 255.0)
+            let iBlue = Int(fBlue * 255.0)
+            let iAlpha = Int(fAlpha * 255.0)
+
+            //  (Bits 24-31 are alpha, 16-23 are red, 8-15 are green, 0-7 are blue).
+            let rgb = (iRed << 24) + (iGreen << 16) + (iBlue << 8) + iAlpha
+            return rgb
+        } else {
+            // Could not extract RGBA components:
+            return nil
+        }
+        
+        
     }
 }
 

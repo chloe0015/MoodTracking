@@ -8,6 +8,8 @@ struct ContentView: View {
     
     @State var diary: String = ""
     
+    let persistenceController = PersistenceController.shared
+    
     let icons = [
         "paintpalette",
         "gearshape",
@@ -41,27 +43,8 @@ struct ContentView: View {
                     HomeView()
                     
                 case 1:
-                    NavigationView{
-                        Text("Mood Diary")
-                            .font(.system(size: 24, weight: .semibold, design: .monospaced))
-                            .fontWeight(.bold)
-                            .position(x: 100, y: 40)
+                    HistoryView().environment(\.managedObjectContext, persistenceController.container.viewContext)
 
-                            .navigationTitle("ColorMood")
-                        .navigationBarTitleDisplayMode(.inline)
-                        
-                        Text("Write a mood diary")
-                            .font(.system(size: 18, weight: .semibold))
-                            .padding(.top, 20)
-                        TextEditor(text: $diary)
-                            .frame(height: 130)
-                            .font(.body.weight(.black))
-                            .foregroundColor(.white)
-                            .scrollContentBackground(.hidden)
-                            .background(.indigo)
-                            .cornerRadius(12)
-                    }
-                        
                     
                 case 2:
                     NavigationView{

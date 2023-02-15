@@ -20,6 +20,8 @@
 		4EF9A6B5299D3C5100A57892 /* CoreDataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9A6B4299D3C5100A57892 /* CoreDataManger.swift */; };
 		4EF9A6B9299D447000A57892 /* MoodTracking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9A6B7299D447000A57892 /* MoodTracking.xcdatamodeld */; };
 		4EF9A6DD299D45CD00A57892 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9A6DC299D45CD00A57892 /* Persistence.swift */; };
+		4EF9A6E2299D51B100A57892 /* HistoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9A6E1299D51B100A57892 /* HistoryRowView.swift */; };
+		4EF9A6E4299D565B00A57892 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9A6E3299D565B00A57892 /* HistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		4EF9A6B4299D3C5100A57892 /* CoreDataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManger.swift; sourceTree = "<group>"; };
 		4EF9A6B8299D447000A57892 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4EF9A6DC299D45CD00A57892 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4EF9A6E1299D51B100A57892 /* HistoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRowView.swift; sourceTree = "<group>"; };
+		4EF9A6E3299D565B00A57892 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 		4E0F8E7A298AB5B600DA1BD6 /* MoodTracking */ = {
 			isa = PBXGroup;
 			children = (
+				4EF9A6DE299D50DF00A57892 /* HistoryView */,
 				4EF9A6B6299D445800A57892 /* CoreData */,
 				4E840A7C299BF9070007AB2D /* HomeView */,
 				4E9F0687298D8C310078E1AD /* Icon */,
@@ -126,6 +131,15 @@
 				4EF9A6B4299D3C5100A57892 /* CoreDataManger.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		4EF9A6DE299D50DF00A57892 /* HistoryView */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9A6E1299D51B100A57892 /* HistoryRowView.swift */,
+				4EF9A6E3299D565B00A57892 /* HistoryView.swift */,
+			);
+			path = HistoryView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,8 +218,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EF9A6B5299D3C5100A57892 /* CoreDataManger.swift in Sources */,
+				4EF9A6E4299D565B00A57892 /* HistoryView.swift in Sources */,
 				4E840A7E299BF92F0007AB2D /* HomeView.swift in Sources */,
 				4EF9A6B9299D447000A57892 /* MoodTracking.xcdatamodeld in Sources */,
+				4EF9A6E2299D51B100A57892 /* HistoryRowView.swift in Sources */,
 				4EF9A6DD299D45CD00A57892 /* Persistence.swift in Sources */,
 				4E0F8E7E298AB5B600DA1BD6 /* ContentView.swift in Sources */,
 				4E0F8E7C298AB5B600DA1BD6 /* MoodTrackingApp.swift in Sources */,

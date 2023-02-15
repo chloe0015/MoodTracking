@@ -1,7 +1,10 @@
 import CoreData
-class CoreDataManger{
+
+
+
+class CoreDataManager {
     
-    static let share = CoreDataManger()
+    static let share = CoreDataManager()
     let viewContext = PersistenceController.shared.container.viewContext
     
     // add coredata
@@ -22,4 +25,6 @@ class CoreDataManger{
             return (false,error.localizedDescription)
         }
     }
+    
 }
+
