@@ -32,7 +32,33 @@ struct ChartView: View{
                 }
                     .frame(width: UIScreen.main.bounds.width-20)
                     .border(.gray, width: 2)
+                
+                GroupBox ("Mood History") {
+                    Chart {
+                        ForEach(0..<chartViewModel.filterResult.count, id: \.self) { index in
+                            LineMark(x: PlottableValue.value("", chartViewModel.filterResult[index].time!.formatted(date: .numeric, time: .omitted)), y: PlottableValue.value("", chartViewModel.filterResult[index].scale))
+                                //smooth curve
+                                .interpolationMethod(.catmullRom)
+                                .foregroundStyle(.gray)
+                                .symbol() {
+                                    // circle connection
+                                    Circle()
+                                        .fill(.green)
+                                        .frame(width: 10)
+                                }
+
+                        }
+                        //YAxis left
+                    }.chartYAxis {
+                        AxisMarks(position: .leading)
+                    }
+                    
+                }.frame(width: UIScreen.main.bounds.width-20, height: 200).border(.gray, width: 2)
+                    .groupBoxStyle(WhiteGroupBoxStyle())
+                Spacer()
             }
+            .navigationTitle("ColorMood")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
@@ -57,13 +83,29 @@ struct ChartScaleItemView: View {
                 HStack {
                     Spacer()
                 }
-                Text("1")
+                Text(String(value))
                     .font(.system(size: 17, weight: .semibold))
-                Text("Title")
+                Text(title)
                     .font(.system(size: 14, weight: .medium))
             }
         }
         
+    }
+}
+
+
+// charts background white
+struct WhiteGroupBoxStyle: GroupBoxStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.content
+            .padding(.top, 30)
+            .padding(20)
+            .background(.white)
+            .cornerRadius(20)
+            .overlay(
+                configuration.label.padding(10),
+                alignment: .topLeading
+            )
     }
 }
 

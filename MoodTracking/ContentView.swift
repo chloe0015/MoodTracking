@@ -8,6 +8,7 @@ struct ContentView: View {
     
     @State var diary: String = ""
     let persistenceController = PersistenceController.shared
+    @ObservedObject var chartViewModel = ChartViewModel()
     
     let icons = [
         "paintpalette",
@@ -57,15 +58,8 @@ struct ContentView: View {
                     }
                     
                 case 3:
-                    NavigationView{
-                        Text("Mood Chart")
-                            .font(.system(size: 24, weight: .semibold, design: .monospaced))
-                            .fontWeight(.bold)
-                            .position(x: 100, y: 40)
-
-                            .navigationTitle("ColorMood")
-                        .navigationBarTitleDisplayMode(.inline)
-                    }
+                        ChartView(chartViewModel: chartViewModel)
+                    
                     
                 case 4:
                     NavigationView{
