@@ -17,6 +17,8 @@
 		4E9F0683298D56810078E1AD /* static in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F067F298D56810078E1AD /* static */; };
 		4E9F0684298D56810078E1AD /* Signika-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F0680298D56810078E1AD /* Signika-VariableFont_wght.ttf */; };
 		4E9F0686298D8C270078E1AD /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F0685298D8C260078E1AD /* Home.png */; };
+		4EB435AB299E6FC90031ACA8 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB435AA299E6FC90031ACA8 /* ChartView.swift */; };
+		4EB435AD299E73790031ACA8 /* ChartScaleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB435AC299E73790031ACA8 /* ChartScaleItemView.swift */; };
 		4EF9A6B5299D3C5100A57892 /* CoreDataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9A6B4299D3C5100A57892 /* CoreDataManger.swift */; };
 		4EF9A6B9299D447000A57892 /* MoodTracking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9A6B7299D447000A57892 /* MoodTracking.xcdatamodeld */; };
 		4EF9A6DD299D45CD00A57892 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9A6DC299D45CD00A57892 /* Persistence.swift */; };
@@ -37,6 +39,8 @@
 		4E9F067F298D56810078E1AD /* static */ = {isa = PBXFileReference; lastKnownFileType = folder; path = static; sourceTree = "<group>"; };
 		4E9F0680298D56810078E1AD /* Signika-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		4E9F0685298D8C260078E1AD /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		4EB435AA299E6FC90031ACA8 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		4EB435AC299E73790031ACA8 /* ChartScaleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartScaleItemView.swift; sourceTree = "<group>"; };
 		4EF9A6B4299D3C5100A57892 /* CoreDataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManger.swift; sourceTree = "<group>"; };
 		4EF9A6B8299D447000A57892 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4EF9A6DC299D45CD00A57892 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 		4E0F8E7A298AB5B600DA1BD6 /* MoodTracking */ = {
 			isa = PBXGroup;
 			children = (
+				4EB435A9299E6FA30031ACA8 /* ChartView */,
 				4EF9A6DE299D50DF00A57892 /* HistoryView */,
 				4EF9A6B6299D445800A57892 /* CoreData */,
 				4E840A7C299BF9070007AB2D /* HomeView */,
@@ -121,6 +126,15 @@
 				4E9F0685298D8C260078E1AD /* Home.png */,
 			);
 			path = Icon;
+			sourceTree = "<group>";
+		};
+		4EB435A9299E6FA30031ACA8 /* ChartView */ = {
+			isa = PBXGroup;
+			children = (
+				4EB435AA299E6FC90031ACA8 /* ChartView.swift */,
+				4EB435AC299E73790031ACA8 /* ChartScaleItemView.swift */,
+			);
+			path = ChartView;
 			sourceTree = "<group>";
 		};
 		4EF9A6B6299D445800A57892 /* CoreData */ = {
@@ -222,7 +236,9 @@
 				4E840A7E299BF92F0007AB2D /* HomeView.swift in Sources */,
 				4EF9A6B9299D447000A57892 /* MoodTracking.xcdatamodeld in Sources */,
 				4EF9A6E2299D51B100A57892 /* HistoryRowView.swift in Sources */,
+				4EB435AB299E6FC90031ACA8 /* ChartView.swift in Sources */,
 				4EF9A6DD299D45CD00A57892 /* Persistence.swift in Sources */,
+				4EB435AD299E73790031ACA8 /* ChartScaleItemView.swift in Sources */,
 				4E0F8E7E298AB5B600DA1BD6 /* ContentView.swift in Sources */,
 				4E0F8E7C298AB5B600DA1BD6 /* MoodTrackingApp.swift in Sources */,
 			);
