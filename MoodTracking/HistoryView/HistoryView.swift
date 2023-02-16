@@ -16,7 +16,8 @@ struct HistoryView: View {
                 ForEach(0..<results.count,id: \.self) { index in
                     HistoryRowView(mood: results[index])
 
-                }
+                }.onDelete { indexSet in
+                    self.deleteMood(atOffsets: indexSet)
                 }.listRowInsets(EdgeInsets())
             }.listStyle(.plain).padding(0)
 
@@ -24,10 +25,24 @@ struct HistoryView: View {
            
             .navigationTitle("ColorMood")
             .navigationBarTitleDisplayMode(.inline)
-            
+            .toolbar {
+                EditButton()
+            }
         }
     }
     
+    public func deleteMood(atOffsets indices: IndexSet) {
+        guard let index = indices.first else {
+            
+            print("index error")
+            return
+        }
+        let mood = results[index]
+       CoreDataManager.share.deleteCounter(mood: mood)
+        
+    }
+}
+
 
 
 struct HistoryView_Previews: PreviewProvider {

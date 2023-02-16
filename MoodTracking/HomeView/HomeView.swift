@@ -10,9 +10,8 @@ struct HomeView: View {
     
     @State var showAlert: Bool = false
     @State var alertMsg: String = ""
-    @State var alertMsg1: String = ""
     
-
+    
     func addMood(){
         let rgb = UIColor(selectedColor).rgb()!
         var scaleInt = Int64(scale)
@@ -125,9 +124,6 @@ struct HomeView: View {
                         .frame(width: 250,height: 60)
                         .background(Color.orange)
                         .cornerRadius(12)
-                        .alert(isPresented: $showAlert) {
-                            Alert(title: Text(alertMsg1))
-                        }
                      
                         //clear button
                         Button {

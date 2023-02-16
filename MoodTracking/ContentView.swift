@@ -7,7 +7,6 @@ struct ContentView: View {
     @State var presented = false
     
     @State var diary: String = ""
-    
     let persistenceController = PersistenceController.shared
     
     let icons = [

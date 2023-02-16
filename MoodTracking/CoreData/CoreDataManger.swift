@@ -26,5 +26,21 @@ class CoreDataManager {
         }
     }
     
+    public func deleteCounter(mood: Mood) {
+        do {
+            let fetchRequest = NSFetchRequest<Mood>(entityName: "Mood")
+            var moodList: [Mood] = []
+            moodList = try PersistenceController.shared.container.viewContext.fetch(fetchRequest)
+            print("found \(moodList.count) mood")
+            for item in moodList where mood == item{
+                PersistenceController.shared.container.viewContext.delete(mood)
+                break
+            }
+            try PersistenceController.shared.container.viewContext.save()
+        }
+        catch {
+            print("Error creating new counter. \(error), \(error.localizedDescription)")
+        }
+    }
 }
 
