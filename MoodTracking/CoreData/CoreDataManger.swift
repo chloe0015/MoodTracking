@@ -11,8 +11,8 @@ class CoreDataManager {
     func addOneMood(color: Int64, shapeImage: String?, scale: Int64?, diary: String?) -> (isSuccess: Bool,msg: String){
        let mood = Mood(context: viewContext)
         
-        mood.time = Date()
-        //Calendar.current.date(byAdding: .day, value: -3, to: Date(), wrappingComponents: false)
+//        mood.time = Date()
+        mood.time = Calendar.current.date(byAdding: .day, value: -1, to: Date(), wrappingComponents: false)
         mood.uuid = UUID().uuidString
         mood.color = color
         mood.shapeImage = shapeImage
