@@ -2,7 +2,7 @@ import SwiftUI
 struct HomeView: View {
     @State var selectedColor: Color = .yellow
     @State var scale: String = ""
-    let shapeImageNames: [String] = ["shape","shape","shape"]
+    let shapeImageNames: [String] = ["1","2","3","4","5","6","7"]
     @State var selectedShapeImageNameIndex: Int?                                                   //optional value
     
     
