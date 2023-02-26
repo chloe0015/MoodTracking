@@ -11,8 +11,8 @@ struct ContentView: View {
     @ObservedObject var chartViewModel = ChartViewModel()
     
     let icons = [
-        "paintpalette",
-        "gearshape",
+        "pencil.and.outline",
+        "note.text",
         "plus",
         "chart.xyaxis.line",
         "person.2"

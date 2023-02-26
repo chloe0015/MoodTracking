@@ -1,6 +1,6 @@
 import SwiftUI
 struct HomeView: View {
-    @State var selectedColor: Color = .red
+    @State var selectedColor: Color = .yellow
     @State var scale: String = ""
     let shapeImageNames: [String] = ["shape","shape","shape"]
     @State var selectedShapeImageNameIndex: Int?                                                   //optional value
@@ -65,7 +65,7 @@ struct HomeView: View {
                     HStack(alignment: .center, spacing: 10) {
                         Text("Scale:")
                             .font(.title3)
-                        TextField("number", text: $scale).frame(width: 100,height: 30).background(Color(UIColor.lightGray)).cornerRadius(5)
+                        TextField("number", text: $scale).frame(width: 100,height: 30).background(Color(UIColor.systemGray4)).cornerRadius(5)
                     }
                     Spacer()
                     
@@ -110,20 +110,12 @@ struct HomeView: View {
                             .font(.body.weight(.black))
                             .foregroundColor(.white)
                             .scrollContentBackground(.hidden)
-                            .background(.indigo)
+//                            .background(.indigo)
+                            .background(Color(hue: 0.226, saturation: 1.0, brightness: 0.78, opacity: 0.481))
                             .cornerRadius(12)
                         
-                        
-                        //add button
-                        Button{
-                            self.addMood()
-                        } label:{
-                            Text("Add")
-                                .foregroundColor(.white)
-                        }
-                        .frame(width: 250,height: 60)
-                        .background(Color.orange)
-                        .cornerRadius(12)
+                        Spacer()
+                     
                      
                         //clear button
                         Button {
@@ -134,11 +126,24 @@ struct HomeView: View {
                             
                         }
                         .frame(width: 250,height: 60)
-                        .background(Color(UIColor.lightGray))
+                        .background(Color(UIColor.systemGray4))
                         .cornerRadius(12)
                         .alert(isPresented: $showAlert) {
                             Alert(title: Text(alertMsg))
                         }
+                        
+                        
+                        
+                        //add button
+                        Button{
+                            self.addMood()
+                        } label:{
+                            Text("Add")
+                                .foregroundColor(.white)
+                        }
+                        .frame(width: 250,height: 60)
+                        .background(Color.yellow)
+                        .cornerRadius(12)
                         
                         Spacer().frame(height: 200)
                         

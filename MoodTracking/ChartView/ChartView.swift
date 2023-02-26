@@ -44,7 +44,7 @@ struct ChartView: View{
                                 .symbol() {
                                     // circle connection
                                     Circle()
-                                        .fill(.green)
+                                        .fill(Color(hue: 0.226, saturation: 1.0, brightness: 0.78, opacity: 0.481))
                                         .frame(width: 10)
                                 }
 
