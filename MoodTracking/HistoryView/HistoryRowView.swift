@@ -8,29 +8,35 @@ struct HistoryRowView: View {
             VStack(alignment: .leading, spacing: 5) {
             
                 HStack(alignment: .center, spacing: 5) {
-                    Text("Color:")
+            
                     Spacer().frame(width: 20, height: 20)
                         .background(self.getColor())
                         .cornerRadius(10)
+                    Text(mood.label ?? "")
+                        .font(.system(size: 18, weight: .semibold, design: .monospaced))
+                        .foregroundStyle(self.getColor().gradient)
+                        .textCase(.uppercase)
+                        
                     Spacer()
+                    
                     
                     Text (mood.time!.formatted(date: .numeric, time: .standard))
                 }.padding(EdgeInsets(top: 10, leading: 15, bottom: 0, trailing: 15))
                 
-                Text("Scale:" +  String(mood.scale))
+                Text("Mood Scale: " +  String(mood.scale))
                     .padding(EdgeInsets(top: 10, leading: 15, bottom: 0, trailing: 15))
                 
-                Text("Diary:" +  (mood.diary ?? ""))
+                Text("My Diary: " +  (mood.diary ?? ""))
                     .padding(EdgeInsets(top: 10, leading: 15, bottom: 10, trailing: 15))
                 
                 if let shapeImage =  mood.shapeImage{
                     HStack {
-                        Text("Shape:")
-                            .padding(.leading, 15)
+                        Text("Mood Shape:")
+                            .padding(.leading, 13)
                         Image(shapeImage)
                             .resizable()
                             .renderingMode(.template)
-                            .frame(width: 100, height: 100)
+                            .frame(width: 90, height: 90)
                             .foregroundColor(self.getColor())
                     }.padding(.top, -5).padding(.bottom, 10)
                     
@@ -56,10 +62,10 @@ struct HistoryRowView: View {
 
 }
 
-struct HistoryRowView_Previews: PreviewProvider {
-    static var previews: some View {
-//        HistoryRowView(mood: .constant(Mood(context: PersistenceController.shared.container.viewContext)))
-        HistoryRowView(mood: Mood(context: PersistenceController.shared.container.viewContext))
-    }
-}
+//struct HistoryRowView_Previews: PreviewProvider {
+//    static var previews: some View {
+////        HistoryRowView(mood: .constant(Mood(context: PersistenceController.shared.container.viewContext)))
+//        HistoryRowView(mood: Mood(context: PersistenceController.shared.container.viewContext))
+//    }
+//}
 

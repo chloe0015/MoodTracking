@@ -6,7 +6,7 @@ struct ContentView: View {
     @State var selectedState = 0
     @State var presented = false
     
-    @State var diary: String = ""
+
     let persistenceController = PersistenceController.shared
     @ObservedObject var chartViewModel = ChartViewModel()
     

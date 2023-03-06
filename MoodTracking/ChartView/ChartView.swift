@@ -26,9 +26,9 @@ struct ChartView: View{
                         .padding(EdgeInsets(top: -5, leading: 10, bottom: 10, trailing: 10))
 
                     HStack(alignment: .center, spacing: 5) {
-                        ChartScaleItemView(value: chartViewModel.chartScaleModel.negative, title: "negative days")
-                        ChartScaleItemView(value: chartViewModel.chartScaleModel.neutral, title: "neutral days")
-                        ChartScaleItemView(value: chartViewModel.chartScaleModel.positive, title: "positive days")
+                        ChartScaleItemView(value: chartViewModel.chartScaleModel.negative, title: "Negative days")
+                        ChartScaleItemView(value: chartViewModel.chartScaleModel.neutral, title: "Neutral days")
+                        ChartScaleItemView(value: chartViewModel.chartScaleModel.positive, title: "Positive days")
                     }.padding(.bottom, 10)
                 }
                     .frame(width: UIScreen.main.bounds.width-20)

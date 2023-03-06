@@ -8,7 +8,7 @@ class CoreDataManager {
     let viewContext = PersistenceController.shared.container.viewContext
     
     // add coredata
-    func addOneMood(color: Int64, shapeImage: String?, scale: Int64?, diary: String?) -> (isSuccess: Bool,msg: String){
+    func addOneMood(color: Int64, shapeImage: String?, scale: Int64?, label: String?, diary: String?) -> (isSuccess: Bool,msg: String){
        let mood = Mood(context: viewContext)
         
 //        mood.time = Date()
@@ -18,6 +18,7 @@ class CoreDataManager {
         mood.shapeImage = shapeImage
         mood.scale = scale ?? 0
         mood.diary = diary
+        mood.label = label
         do {
             try viewContext.save()
             return (true,"Save success")

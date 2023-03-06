@@ -2,7 +2,7 @@ import SwiftUI
 struct HomeView: View {
     @State var selectedColor: Color = .yellow
     @State var scale: String = ""
-    @State var lable: String = ""
+    @State var label: String = ""
     
     let shapeImageNames: [String] = ["Image","2","3","4","5","6","7"]
     @State var selectedShapeImageNameIndex: Int?                                                   //optional value
@@ -26,7 +26,7 @@ struct HomeView: View {
             shapeImage = shapeImageNames[selectedShapeImageNameIndex]
         }
         
-       let result = CoreDataManager.share.addOneMood(color: Int64(rgb), shapeImage:shapeImage, scale: scaleInt, diary: diary)
+       let result = CoreDataManager.share.addOneMood(color: Int64(rgb), shapeImage:shapeImage, scale: scaleInt,  label: label, diary: diary)
         alertMsg = result.msg
         showAlert = true
         
@@ -111,7 +111,7 @@ struct HomeView: View {
                         HStack(alignment: .center, spacing: 10) {
                             Text("Mood Label:")
                                 .font(.title3)
-                            TextField(" how do you feel?", text: $lable).frame(width: 177,height: 35).background(Color(UIColor.systemGray4)).cornerRadius(5)
+                            TextField(" how do you feel?", text: $label).frame(width: 177,height: 35).background(Color(UIColor.systemGray4)).cornerRadius(5)
                         }
                         
                         
