@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D9CA462B-1EF2-484B-8AAC-435940BFB586"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB15958E-BBF0-4B11-9E02-F0B76CB58533"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoodTracking/HomeView/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "HomeView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "DB15958E-BBF0-4B11-9E02-F0B76CB58533 - 9182f7d8927e91e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of MoodTracking.HomeView.selectedShapeImageNameIndex : Swift.Optional&lt;Swift.Int&gt;"
+                  moduleName = "MoodTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangziyan/MoodTracking/MoodTracking/HomeView/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "DB15958E-BBF0-4B11-9E02-F0B76CB58533 - a2ecb0e4feec15d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoodTracking.HomeView.selectedShapeImageNameIndex.getter : Swift.Optional&lt;Swift.Int&gt;"
+                  moduleName = "MoodTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangziyan/MoodTracking/MoodTracking/HomeView/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "DB15958E-BBF0-4B11-9E02-F0B76CB58533 - 169dcb0c676d81dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoodTracking.HomeView.selectedShapeImageNameIndex.setter : Swift.Optional&lt;Swift.Int&gt;"
+                  moduleName = "MoodTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangziyan/MoodTracking/MoodTracking/HomeView/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "DB15958E-BBF0-4B11-9E02-F0B76CB58533 - 1e4a870ddcaaa0ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoodTracking.HomeView.selectedShapeImageNameIndex.modify : Swift.Optional&lt;Swift.Int&gt;"
+                  moduleName = "MoodTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangziyan/MoodTracking/MoodTracking/HomeView/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "DB15958E-BBF0-4B11-9E02-F0B76CB58533 - 7d51f41df17e80bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoodTracking.HomeView.selectedShapeImageNameIndex.modify : Swift.Optional&lt;Swift.Int&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MoodTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangziyan/MoodTracking/MoodTracking/HomeView/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "DB15958E-BBF0-4B11-9E02-F0B76CB58533 - 32ceb76b72270262"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoodTracking.HomeView.$selectedShapeImageNameIndex.getter : SwiftUI.Binding&lt;Swift.Optional&lt;Swift.Int&gt;&gt;"
+                  moduleName = "MoodTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangziyan/MoodTracking/MoodTracking/HomeView/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "DB15958E-BBF0-4B11-9E02-F0B76CB58533 - 9c076726416d092b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoodTracking.HomeView.init() -&gt; MoodTracking.HomeView"
+                  moduleName = "MoodTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangziyan/MoodTracking/MoodTracking/HomeView/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "548">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C20C644-914E-4C7B-937C-FC4C35BB9D36"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoodTracking/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
+            landmarkName = "ContentView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "1C20C644-914E-4C7B-937C-FC4C35BB9D36 - 444bc445f09bcc6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of MoodTracking.ContentView.selectedState : Swift.Int"
+                  moduleName = "MoodTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangziyan/MoodTracking/MoodTracking/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "1C20C644-914E-4C7B-937C-FC4C35BB9D36 - 4a2644264dd54a59"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoodTracking.ContentView.selectedState.getter : Swift.Int"
+                  moduleName = "MoodTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangziyan/MoodTracking/MoodTracking/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "1C20C644-914E-4C7B-937C-FC4C35BB9D36 - 7c9935ce4fb43e55"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoodTracking.ContentView.selectedState.setter : Swift.Int"
+                  moduleName = "MoodTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangziyan/MoodTracking/MoodTracking/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "1C20C644-914E-4C7B-937C-FC4C35BB9D36 - aca297824562944"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoodTracking.ContentView.selectedState.modify : Swift.Int"
+                  moduleName = "MoodTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangziyan/MoodTracking/MoodTracking/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "1C20C644-914E-4C7B-937C-FC4C35BB9D36 - ec96d7d76714c955"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoodTracking.ContentView.selectedState.modify : Swift.Int with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MoodTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangziyan/MoodTracking/MoodTracking/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "1C20C644-914E-4C7B-937C-FC4C35BB9D36 - 2b6c1a2a8eb5ba1d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoodTracking.ContentView.$selectedState.getter : SwiftUI.Binding&lt;Swift.Int&gt;"
+                  moduleName = "MoodTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangziyan/MoodTracking/MoodTracking/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "1C20C644-914E-4C7B-937C-FC4C35BB9D36 - 6d3b710a4bf910c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoodTracking.ContentView.init() -&gt; MoodTracking.ContentView"
+                  moduleName = "MoodTracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhangziyan/MoodTracking/MoodTracking/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

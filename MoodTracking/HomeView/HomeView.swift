@@ -2,7 +2,9 @@ import SwiftUI
 struct HomeView: View {
     @State var selectedColor: Color = .yellow
     @State var scale: String = ""
-    let shapeImageNames: [String] = ["1","2","3","4","5","6","7"]
+    @State var lable: String = ""
+    
+    let shapeImageNames: [String] = ["Image","2","3","4","5","6","7"]
     @State var selectedShapeImageNameIndex: Int?                                                   //optional value
     
     
@@ -31,7 +33,7 @@ struct HomeView: View {
     }
     
     func clearMood(){
-        selectedColor = Color.red
+        selectedColor = Color.yellow
         scale = ""
         selectedShapeImageNameIndex = nil
         diary = ""
@@ -43,7 +45,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView{
             ScrollView(.vertical, showsIndicators: false) {
-                VStack(alignment: .center, spacing: 10) {
+                VStack(alignment: .center, spacing: 18) {
                     
                     Text("How Are You Today?")
                         .font(.system(size: 24, weight: .semibold, design: .monospaced))
@@ -63,11 +65,11 @@ struct HomeView: View {
                         .padding(.top, 20)
 
                     HStack(alignment: .center, spacing: 10) {
-                        Text("Scale:")
+                        Text("Mood Scale:")
                             .font(.title3)
-                        TextField("number", text: $scale).frame(width: 100,height: 30).background(Color(UIColor.systemGray4)).cornerRadius(5)
+                        TextField(" number", text: $scale).frame(width: 100,height: 35).background(Color(UIColor.systemGray4)).cornerRadius(5)
                     }
-                    Spacer()
+                   
                     
                     //choose shape
                     Text("Choose your mood shape")
@@ -75,7 +77,7 @@ struct HomeView: View {
                         .padding(.top, 20)
                     
                     ScrollView(.horizontal, showsIndicators: true){
-                        LazyHStack{                                                                             //loads cells when needed
+                        LazyHStack(spacing: 0){                                                                             //loads cells when needed
                             ForEach(0..<shapeImageNames.count, id: \.self) { index in
                                 Button {
                                     
@@ -88,20 +90,33 @@ struct HomeView: View {
                                 } label: {
                                     Image(uiImage: UIImage(named: shapeImageNames[index])!)
                                         .resizable()
-                                        .frame(width: 100, height: 100, alignment: .center
-                                        ).padding(5)
+                                        .renderingMode(.template)
+                                        .foregroundColor(selectedColor)
+                                        .frame(width: 90, height: 90, alignment: .center
+                                        ).padding(3.4)
                                         .tag(index)
-                                        .border(selectedShapeImageNameIndex == index ? .green : .clear)
+                                        .border(selectedShapeImageNameIndex == index ? selectedColor : .clear)
                                 }
                             }
                             
                         }
                     }.frame(height: 110, alignment: .center)
-                
-                    
                     
                     //text
-                    VStack(alignment: .center, spacing: 10){
+                    VStack(alignment: .center, spacing: 18){
+                        Text("Describe your mood shape with one word")
+                            .font(.headline)
+                            .padding(.top, 20)
+                        
+                        HStack(alignment: .center, spacing: 10) {
+                            Text("Mood Label:")
+                                .font(.title3)
+                            TextField(" how do you feel?", text: $lable).frame(width: 177,height: 35).background(Color(UIColor.systemGray4)).cornerRadius(5)
+                        }
+                        
+                        
+                        Spacer(minLength: 0)
+                        
                         Text("Write a mood diary")
                             .font(.headline)
                             .padding(.top, 20)

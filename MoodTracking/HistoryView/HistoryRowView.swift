@@ -29,7 +29,9 @@ struct HistoryRowView: View {
                             .padding(.leading, 15)
                         Image(shapeImage)
                             .resizable()
+                            .renderingMode(.template)
                             .frame(width: 100, height: 100)
+                            .foregroundColor(self.getColor())
                     }.padding(.top, -5).padding(.bottom, 10)
                     
                 }
