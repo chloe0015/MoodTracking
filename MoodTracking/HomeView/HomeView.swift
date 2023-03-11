@@ -4,7 +4,7 @@ struct HomeView: View {
     @State var scale: String = ""
     @State var label: String = ""
     
-    let shapeImageNames: [String] = ["Image","2","3","4","5","6","7"]
+    let shapeImageNames: [String] = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16"]
     @State var selectedShapeImageNameIndex: Int?                                                   //optional value
     
     

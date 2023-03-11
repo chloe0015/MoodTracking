@@ -15,6 +15,7 @@ struct HistoryRowView: View {
                     Text(mood.label ?? "")
                         .font(.system(size: 18, weight: .semibold, design: .monospaced))
                         .foregroundStyle(self.getColor().gradient)
+                        
                         .textCase(.uppercase)
                         
                     Spacer()
