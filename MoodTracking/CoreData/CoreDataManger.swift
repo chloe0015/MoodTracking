@@ -1,7 +1,6 @@
 import CoreData
 
 
-
 class CoreDataManager {
     
     static let share = CoreDataManager()

@@ -12,6 +12,11 @@
 		4E0F8E80298AB5B700DA1BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0F8E7F298AB5B700DA1BD6 /* Assets.xcassets */; };
 		4E0F8E83298AB5B800DA1BD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0F8E82298AB5B800DA1BD6 /* Preview Assets.xcassets */; };
 		4E840A7E299BF92F0007AB2D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E840A7D299BF92F0007AB2D /* HomeView.swift */; };
+		4E8C77242A06AD830004FD6A /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C77232A06AD830004FD6A /* MeView.swift */; };
+		4E8C77262A06ADB70004FD6A /* ContactRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C77252A06ADB70004FD6A /* ContactRowView.swift */; };
+		4E8C77282A06ADE10004FD6A /* AddContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C77272A06ADE10004FD6A /* AddContactsView.swift */; };
+		4E8C772A2A06AE060004FD6A /* AddFeelingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C77292A06AE060004FD6A /* AddFeelingsView.swift */; };
+		4E8C772C2A06AEB40004FD6A /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C772B2A06AEB40004FD6A /* ContactsModel.swift */; };
 		4E9F0681298D56810078E1AD /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F067D298D56810078E1AD /* OFL.txt */; };
 		4E9F0682298D56810078E1AD /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F067E298D56810078E1AD /* README.txt */; };
 		4E9F0683298D56810078E1AD /* static in Resources */ = {isa = PBXBuildFile; fileRef = 4E9F067F298D56810078E1AD /* static */; };
@@ -37,6 +42,11 @@
 		4E0F8E82298AB5B800DA1BD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E0F8E84298AB5B800DA1BD6 /* MoodTracking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoodTracking.entitlements; sourceTree = "<group>"; };
 		4E840A7D299BF92F0007AB2D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4E8C77232A06AD830004FD6A /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		4E8C77252A06ADB70004FD6A /* ContactRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowView.swift; sourceTree = "<group>"; };
+		4E8C77272A06ADE10004FD6A /* AddContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactsView.swift; sourceTree = "<group>"; };
+		4E8C77292A06AE060004FD6A /* AddFeelingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFeelingsView.swift; sourceTree = "<group>"; };
+		4E8C772B2A06AEB40004FD6A /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 		4E9F067D298D56810078E1AD /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		4E9F067E298D56810078E1AD /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		4E9F067F298D56810078E1AD /* static */ = {isa = PBXFileReference; lastKnownFileType = folder; path = static; sourceTree = "<group>"; };
@@ -84,6 +94,7 @@
 		4E0F8E7A298AB5B600DA1BD6 /* MoodTracking */ = {
 			isa = PBXGroup;
 			children = (
+				4E8C77222A06AD680004FD6A /* ContactView */,
 				4EB435A9299E6FA30031ACA8 /* ChartView */,
 				4EF9A6DE299D50DF00A57892 /* HistoryView */,
 				4EF9A6B6299D445800A57892 /* CoreData */,
@@ -113,6 +124,18 @@
 				4E840A7D299BF92F0007AB2D /* HomeView.swift */,
 			);
 			path = HomeView;
+			sourceTree = "<group>";
+		};
+		4E8C77222A06AD680004FD6A /* ContactView */ = {
+			isa = PBXGroup;
+			children = (
+				4E8C77232A06AD830004FD6A /* MeView.swift */,
+				4E8C77252A06ADB70004FD6A /* ContactRowView.swift */,
+				4E8C77272A06ADE10004FD6A /* AddContactsView.swift */,
+				4E8C77292A06AE060004FD6A /* AddFeelingsView.swift */,
+				4E8C772B2A06AEB40004FD6A /* ContactsModel.swift */,
+			);
+			path = ContactView;
 			sourceTree = "<group>";
 		};
 		4E9F0674298D55CE0078E1AD /* Font */ = {
@@ -240,12 +263,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E8C77242A06AD830004FD6A /* MeView.swift in Sources */,
 				4EF9A6B5299D3C5100A57892 /* CoreDataManger.swift in Sources */,
 				4EFD491D29A3CAB500786980 /* ChartScaleItemView.swift in Sources */,
+				4E8C77282A06ADE10004FD6A /* AddContactsView.swift in Sources */,
+				4E8C772A2A06AE060004FD6A /* AddFeelingsView.swift in Sources */,
 				4EF9A6E4299D565B00A57892 /* HistoryView.swift in Sources */,
+				4E8C77262A06ADB70004FD6A /* ContactRowView.swift in Sources */,
 				4E840A7E299BF92F0007AB2D /* HomeView.swift in Sources */,
 				4EF9A6B9299D447000A57892 /* MoodTracking.xcdatamodeld in Sources */,
 				4EF9A6E2299D51B100A57892 /* HistoryRowView.swift in Sources */,
+				4E8C772C2A06AEB40004FD6A /* ContactsModel.swift in Sources */,
 				4EFD491B29A3C2F400786980 /* UIWindowView.swift in Sources */,
 				4EB435AF299E78F80031ACA8 /* ChartViewModel.swift in Sources */,
 				4EB435AB299E6FC90031ACA8 /* ChartView.swift in Sources */,
@@ -383,7 +411,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodTracking/Preview Content\"";
-				DEVELOPMENT_TEAM = ZA34J8498D;
+				DEVELOPMENT_TEAM = 4AMF4ZV2LG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -416,7 +444,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodTracking/Preview Content\"";
-				DEVELOPMENT_TEAM = ZA34J8498D;
+				DEVELOPMENT_TEAM = 4AMF4ZV2LG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";

@@ -53,7 +53,7 @@ struct ContentView: View {
                             .multilineTextAlignment(.center)
                             .position(x: 200, y: 80)
 
-                            .navigationTitle("ColorMood")
+                            .navigationTitle("iColour")
                         .navigationBarTitleDisplayMode(.inline)
                     }
                     
@@ -62,15 +62,7 @@ struct ContentView: View {
                     
                     
                 case 4:
-                    NavigationView{
-                        Text("Family Sharing")
-                            .font(.system(size: 24, weight: .semibold, design: .monospaced))
-                            .fontWeight(.bold)
-                            .position(x: 130, y: 40)
-
-                            .navigationTitle("ColorMood")
-                        .navigationBarTitleDisplayMode(.inline)
-                    }
+                    MeView()
                     
                 default:
                     NavigationView{
@@ -79,7 +71,7 @@ struct ContentView: View {
                             .multilineTextAlignment(.center)
                             .position(x: 200, y: 80)
 
-                            .navigationTitle("ColorMood")
+                            .navigationTitle("iColour")
                         .navigationBarTitleDisplayMode(.inline)
                     }
                 }
